@@ -1,0 +1,35 @@
+<% include ./partials/header%>
+
+<div class='container'>
+	
+	<div class='row'>
+		<h1 style ='text-align:center'>
+			Sign Up
+		</h1>
+		<div style='width: 25%; margin:25px auto;'>
+			<form action ='/register' method='post'>
+				<input class ='form-control' style= "width: 300px;" type='text' name='username' placeholder='username'>
+				<input class ='form-control' style= "width: 300px;" type='password' name='password' placeholder='password'>
+				<input class ='form-control' style= "width: 300px;" type='text' name='firstName' placeholder='first name'>
+				<input class ='form-control' style= "width: 300px;" type='text' name='lastName' placeholder='last name'>
+				<input class ='form-control' style= "width: 300px;" type='email' name='email' placeholder='email'>
+				<input class ='form-control' style= "width: 300px;" type='text' name='avatar' placeholder='avatar image url'>
+				<input class ='form-control' style= "width: 300px;" type='password' name='adminCode' placeholder='admin code'>
+				<button class ='btn btn-lg btn-default btn-block btn-primary' style= "width: 300px;" onclick="this.form.submit(); this.disabled = true;">
+					Sign Up
+				</button>
+			</form>
+			<a href='/campgrounds'>Go back</a>
+			
+		</div>
+		
+
+		
+	</div>
+
+
+</div>
+
+	
+
+<% include ./partials/footer%>
