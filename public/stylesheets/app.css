@@ -67,3 +67,9 @@ body {
 .form-control{
 	margin: 5px auto;
 }
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
