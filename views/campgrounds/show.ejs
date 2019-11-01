@@ -68,17 +68,17 @@
 		</div>
 	</div>
 </div>
-
-
 <script>
 	function initMap() {
-	  var lat =  campground.lat ;
-	  var lng = campground.lng ;
+	  var lat = <%= campground.lat %>;
+	  var lng = <%= campground.lng %>;
+	  console.log(lat);
+	  console.log(lng);
 	  var center = {lat: lat, lng: lng };
 	  var map = new google.maps.Map(document.getElementById('map'), {
 		  zoom: 8,
 		  center: center,
-		  scrollwheel: false
+		  scrollwheel: true
 	  });
 	  var contentString = `
 		<strong><%= campground.name %><br />
@@ -97,6 +97,6 @@
 	  });
 	}
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyvKWfkYvsPu5FPeFtQiiYhKO8tfjJKnQ"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyvKWfkYvsPu5FPeFtQiiYhKO8tfjJKnQ&callback=initMap"></script>
 
 <% include ../partials/footer%>
