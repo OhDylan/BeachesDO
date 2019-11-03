@@ -1,7 +1,6 @@
-
-
 body { 
-	background: url("https://images.unsplash.com/photo-1499937405357-13aa5449e360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80") no-repeat center center fixed; 
+	background-color: rgb(3, 0, 32);
+	/* background: url("https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=243&q=80") no-repeat center center fixed;  */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -18,12 +17,16 @@ body {
 }
 
 .thumbnail .caption-full{
-	padding: 9px
+	padding: 9px;
+}
+
+.thumbnail h4{
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .username{
 	font-size: 1.5em;
-	color: purple;
+	color: rgb(247, 191, 247);
 }
 
 .delete-form{
@@ -31,42 +34,59 @@ body {
 }
 
 .jumbotron{
-	background-color: rgb(149, 239, 255);
+	background-color: transparent;
 	margin: 10px;
-	border: 0;
+	border: 0px;
+	text-align: center;
 }
 
 .btn-primary{
-	background-color: rgb(20, 216, 230);
+	background-color: rgb(141, 118, 243);
 	border: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .jumbotron p{
-	color: rgb(58, 2, 2);
+	color: rgb(229, 236, 245);
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .jumbotron h2{
-	color: rgb(58, 2, 2);
+	color: rgb(229, 236, 245);
 	font-weight: bold;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.jumbotron .btn-info{
+	background-color: rgb(167, 189, 238);
+	color: rgb(3, 0, 32);
+	width: 280px;
 }
 
 .navbar{
-	color: rgb(37, 106, 163) !important;
-	background-color:transparent;
+	background-color: transparent;
 	border: none;
 	font-weight: bold;
-	
+	margin: 0;
+}
+
+.navbar-header .navbar-brand{
+	color: rgb(229, 236, 245)!important;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .no-match{
-	color: black;
+	color: rgb(245, 244, 253);
 	font-weight: bold;
 	font-size: 1.5em;
+	text-align: center;
 }
+
 
 .form-control{
 	margin: 5px auto;
 }
+
 
 /* Google Maps */
 #map {
