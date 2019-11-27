@@ -1,5 +1,5 @@
 body { 
-	background-color: rgb(3, 0, 32);
+	background-color: rgb(0, 6, 32);
 	/* background: url("https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=243&q=80") no-repeat center center fixed;  */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -26,7 +26,7 @@ body {
 
 .username{
 	font-size: 1.5em;
-	color: rgb(247, 191, 247);
+	color: white;
 }
 
 .delete-form{
@@ -41,9 +41,26 @@ body {
 }
 
 .btn-primary{
-	background-color: rgb(141, 118, 243);
+	background-color: rgb(0, 6, 32);
 	border: none;
 	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-light:hover{
+	background-color: rgb(0, 6, 32);
+	color:white;
+	border: 0.8px white solid;
+}
+
+.btn-lg{
+	background-color: rgb(0, 6, 32);
+	color:white;
+	border: 0.8px white solid;
+}
+
+.btn-lg:hover{
+	background-color: white;
+	color: rgb(0, 6, 32);
 }
 
 .jumbotron p{
@@ -58,9 +75,21 @@ body {
 }
 
 .jumbotron .btn-info{
-	background-color: rgb(167, 189, 238);
-	color: rgb(3, 0, 32);
+	background-color: rgb(0, 6, 32);
+	color: rgb(255, 255, 255);
 	width: 280px;
+	border: solid 2px white;
+	position: relative;
+}
+
+.jumbotron .btn-info:hover{
+	background-color: white;
+	color: rgb(0, 6, 32);
+}
+
+.list-group-item{
+	background-color: rgb(0, 6, 32);
+	border: solid 1px white
 }
 
 .navbar{
@@ -71,7 +100,7 @@ body {
 }
 
 .navbar-header .navbar-brand{
-	color: rgb(229, 236, 245)!important;
+	color: white!important;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 

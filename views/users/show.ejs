@@ -8,10 +8,10 @@
             <div class="caption"><a href="mailto:<%= user.email %>"><%= user.email %></a></div>
         </div>
         <div class="col-md-8">
-            <h3><%= user.username %>'s beaches:</h3>
-            <ul>
+            <h3 style="color:white"><%= user.username %>'s beaches:</h3>
+            <ul class="list-group">
                 <% campgrounds.forEach((campground)=>{ %>
-                    <li><a href="/campgrounds/<%=campground.id %>"><%= campground.name %></a></li>
+                    <li class="list-group-item"><a style="color:white" href="/campgrounds/<%=campground.id %>"><%= campground.name %></a></li>
                 <% }); %>
             </ul>
         </div>

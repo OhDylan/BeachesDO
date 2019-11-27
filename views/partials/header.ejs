@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-		<title>The Sun And The Beach</title>
+		<title>BeachesDO</title>
 		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>	
 		<link rel='stylesheet' href='/stylesheets/app.css'>
 		
@@ -21,11 +21,11 @@
 							<div class='collapse navbar-collapse'>
 								<ul class ='nav navbar-nav navbar-right'>
 									<% if(!currentUser){ %>
-										<li style="color:antiquewhite"><a href='/login'>LOGIN</a></li>
-										<li style="color:antiquewhite"><a href='/register'>REGISTER</a></li>
+										<li><a style="color:white; font-family: Georgia, 'Times New Roman', Times, serif;" href='/login'>LOGIN</a></li>
+										<li><a style="color:white; font-family: Georgia, 'Times New Roman', Times, serif;" href='/register'>REGISTER</a></li>
 									<% } else { %>
-									<li class='username'><a><%= currentUser.username %></a></li>
-										<li><a href='/logout'>LOGOUT</a></li>
+									<li class='username'><a style="color:white; font-family: Georgia, 'Times New Roman', Times, serif"><%= currentUser.username %></a></li>
+										<li><a style="color:white; font-family: Georgia, 'Times New Roman', Times, serif" href='/logout'>LOGOUT</a></li>
 									<% } %>
 									
 									
